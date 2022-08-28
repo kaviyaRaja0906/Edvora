@@ -15,7 +15,6 @@ function Orders(){
         .then((res) =>{
           console.log(res.data);
           setOrders(res.data);
-          setUserId(res.data[1].user_id);
           console.log(res.data[1].user_id);
         })
         .catch((err) =>{
